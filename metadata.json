@@ -1,0 +1,6 @@
+{
+  "name": "Cluster Oryza 4",
+  "description": "A premium, private residential community website for Cluster Oryza 4 — 26 Homes. One Community.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

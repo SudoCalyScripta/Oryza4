@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-deep-green: #354936;
+    --color-rice-leaf: #657A52;
+    --color-muted-sage: #879477;
+    --color-champagne-gold: #C8A96B;
+    --color-rice-gold: #D8C28F;
+    --color-rice-ivory: #F7F3E8;
+    --color-warm-cream: #EDE6D5;
+    --color-earth-brown: #756653;
+    --color-charcoal: #252821;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #F7F3E8;
+    color: #252821;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+}
+
+/* Subtle Natural Paper Grain Texture Overlay */
+.paper-grain-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 30;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+}
+
+/* Glassmorphism & Frost UI styling - Rice & Residential Warmth */
+.frost-glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(53, 73, 54, 0.12);
+  box-shadow: 0 15px 35px -10px rgba(53, 73, 54, 0.07), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.frost-glass-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.frost-glass-hover:hover {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(216, 194, 143, 0.7);
+  box-shadow: 0 20px 45px -10px rgba(53, 73, 54, 0.14), 0 0 20px 0 rgba(216, 194, 143, 0.25), inset 0 1px 1px 0 rgba(255, 255, 255, 1);
+  transform: translateY(-3px);
+}
+
+.frost-glass-dark {
+  background: rgba(53, 73, 54, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(216, 194, 143, 0.22);
+  box-shadow: 0 20px 40px -10px rgba(37, 40, 33, 0.35), inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.frost-glass-dark-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.frost-glass-dark-hover:hover {
+  background: rgba(53, 73, 54, 0.95);
+  border-color: rgba(216, 194, 143, 0.65);
+  box-shadow: 0 25px 50px -10px rgba(37, 40, 33, 0.45), 0 0 25px 0 rgba(216, 194, 143, 0.2), inset 0 1px 1px 0 rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
+
+.frost-nav {
+  background: rgba(247, 243, 232, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(53, 73, 54, 0.1);
+}
+
+.frost-nav-scrolled {
+  background: rgba(53, 73, 54, 0.92);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border-bottom: 1px solid rgba(216, 194, 143, 0.22);
+  box-shadow: 0 12px 30px -8px rgba(37, 40, 33, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #879477;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #657A52;
+}
