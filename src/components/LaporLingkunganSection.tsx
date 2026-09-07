@@ -80,7 +80,7 @@ export const LaporLingkunganSection: React.FC<LaporLingkunganSectionProps> = ({
             <span>Peduli Lingkungan Bersama</span>
           </div>
           <h2 className="font-display text-4xl sm:text-5xl text-[#354936] font-normal leading-tight">
-            Something needs attention?
+            Ada yang perlu diperbaiki?
           </h2>
           <p className="mt-3 text-sm sm:text-base text-[#756653] font-light">
             Temukan hal yang perlu diperbaiki di sekitar lingkungan? Beritahukan kami agar dapat segera dirapikan demi kenyamanan bersama.

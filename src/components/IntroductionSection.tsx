@@ -40,17 +40,17 @@ export const IntroductionSection: React.FC = () => {
           <span className="w-8 h-px bg-[#C8A96B]" />
           <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#657A52] flex items-center gap-1.5">
             <RiceGrainIcon className="w-3.5 h-3.5 text-[#C8A96B]" />
-            Our Philosophy
+            Tentang Paguyuban
           </span>
         </div>
 
         {/* Section Headline */}
         <div className="max-w-3xl mb-16 md:mb-20">
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl text-[#354936] leading-tight font-normal">
-            More than a neighborhood.
+            Lebih dari sekadar tempat tinggal.
           </h2>
           <p className="mt-4 text-xl sm:text-2xl md:text-3xl text-[#756653] font-light leading-snug">
-            A place where <span className="font-display italic text-[#657A52] font-normal">25 homes</span> become one community.
+            Tempat <span className="font-display italic text-[#657A52] font-normal">26 rumah</span> tumbuh sebagai satu lingkungan.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export const IntroductionSection: React.FC = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-[#354936]/15 aspect-[16/11]">
               <img
                 src={ARCHITECTURE_IMAGES.introduction}
-                alt="Modern tropical architecture of Cluster Oryza 4"
+                alt="Arsitektur tropis modern Cluster Oryza 4"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 style={{
                   transform: inView ? `translate3d(0, ${scrollY * 0.05}px, 0)` : undefined,
@@ -76,7 +76,7 @@ export const IntroductionSection: React.FC = () => {
                   Desain Residensial Tropis Kontemporer
                 </span>
                 <span className="hidden sm:inline-block text-[#D8C28F] font-mono text-[11px]">
-                  Est. 2020 • 25 Units
+                  Berdiri sejak 2020 • 26 Rumah
                 </span>
               </div>
             </div>

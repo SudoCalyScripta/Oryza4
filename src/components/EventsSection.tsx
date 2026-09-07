@@ -35,15 +35,15 @@ export const EventsSection: React.FC = () => {
             <span className="w-6 h-px bg-[#C8A96B]" />
             <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#657A52] flex items-center gap-1.5">
               <RiceGrainIcon className="w-3.5 h-3.5 text-[#C8A96B]" />
-              Gatherings & Agenda
+              Kegiatan & Agenda Warga
             </span>
             <span className="w-6 h-px bg-[#C8A96B]" />
           </div>
           <h2 className="font-display text-4xl sm:text-5xl text-[#354936] font-normal leading-tight">
-            Community Events
+            Agenda Warga
           </h2>
           <p className="mt-3 text-sm sm:text-base text-[#756653] font-light">
-            Ruang temu, kebersamaan, dan musyawarah yang menghidupkan keakraban antar 25 keluarga.
+            Ruang untuk berkegiatan, bermusyawarah, dan mempererat hubungan antar 26 keluarga.
           </p>
         </div>
 

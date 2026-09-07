@@ -96,10 +96,10 @@ export const ManagementPanel: React.FC<ManagementPanelProps> = ({
           {/* Greeting Headline */}
           <div>
             <h3 className="font-display text-3xl sm:text-4xl text-[#F7F3E8] font-normal leading-tight">
-              Good morning.
+              Selamat datang, Pengurus.
             </h3>
             <p className="text-sm sm:text-base text-[#D8C28F] font-light mt-1">
-              Here’s what’s happening in Oryza 4 today.
+              Berikut ringkasan hal yang perlu ditindaklanjuti hari ini di Oryza 4.
             </p>
           </div>
 
@@ -223,7 +223,7 @@ export const ManagementPanel: React.FC<ManagementPanelProps> = ({
 
         {/* Panel Footer */}
         <div className="p-4 sm:p-6 bg-[#1D2B1E]/80 border-t border-white/10 flex items-center justify-between text-xs text-[#F7F3E8]/60">
-          <span>Cluster Oryza 4 Internal Management System • 26 Homes</span>
+          <span>Sistem Pengelolaan Internal Oryza 4 • 26 Rumah</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 rounded-full border border-white/20 text-white hover:bg-[#D8C28F]/20 hover:border-[#D8C28F] hover:text-[#D8C28F] transition-all"

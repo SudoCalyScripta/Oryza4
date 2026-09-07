@@ -29,12 +29,12 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   const navLinks = [
-    { label: 'Home', href: '#hero' },
+    { label: 'Beranda', href: '#hero' },
     { label: 'Galeri', href: '#snapshot' },
-    { label: 'Neighbors', href: '#neighbors' },
-    { label: 'Announcements', href: '#announcements' },
-    { label: 'Events', href: '#events' },
-    { label: 'Community Fund', href: '#community-fund' },
+    { label: 'Data Warga', href: '#neighbors' },
+    { label: 'Pengumuman', href: '#announcements' },
+    { label: 'Agenda', href: '#events' },
+    { label: 'Kas Warga', href: '#community-fund' },
     { label: 'Lapor Lingkungan', href: '#lapor-lingkungan' },
   ];
 
@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 ORYZA 4
               </span>
               <span className="text-[10px] tracking-[0.25em] text-[#D8C28F] uppercase mt-1 font-light">
-                Private Cluster
+                Paguyuban Warga
               </span>
             </div>
           </a>
