@@ -52,7 +52,7 @@ export const NeighborsSection: React.FC = () => {
                             <span className="w-6 h-px bg-[#C8A96B]" />
                             <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#657A52] flex items-center gap-1.5">
                                 <RiceGrainIcon className="w-3.5 h-3.5 text-[#C8A96B]" />
-                                Data 26 Rumah Warga
+                                Data 25 Rumah Warga
                             </span>
                         </div>
                         <h2 className="font-display text-4xl sm:text-5xl text-[#354936] font-normal leading-tight">

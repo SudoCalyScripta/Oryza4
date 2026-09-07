@@ -107,10 +107,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 {/* Tagline */}
                 <div className="mt-4 sm:mt-6 max-w-2xl">
                     <p className="text-lg sm:text-2xl md:text-3xl font-light text-[#F7F3E8]/95 tracking-wide font-sans">
-                        26 Rumah. <span className="italic font-display font-normal text-[#D8C28F]">Satu Kebersamaan.</span>
+                        25 Rumah. <span className="italic font-display font-normal text-[#D8C28F]">Satu Kebersamaan.</span>
                     </p>
                     <p className="mt-3 text-xs sm:text-sm text-[#F7F3E8]/75 font-light max-w-lg mx-auto tracking-wider leading-relaxed">
-                        Ruang tinggal bersama untuk mengelola lingkungan, berbagi informasi, dan menjaga kenyamanan 26 keluarga Oryza 4.
+                        Ruang tinggal bersama untuk mengelola lingkungan, berbagi informasi, dan menjaga kenyamanan 25 keluarga Oryza 4.
                     </p>
                 </div>
 
@@ -131,7 +131,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <div className="mt-12 sm:mt-14 hidden md:inline-flex items-center gap-6 px-6 py-2.5 rounded-full border border-[#D8C28F]/20 bg-[#252821]/45 backdrop-blur-2xl text-[#F7F3E8]/85 text-xs">
                     <div className="flex items-center gap-2">
                         <span className="w-2 h-2 rounded-full bg-[#879477]" />
-                        <span className="font-medium text-white">26 / 26</span>
+                        <span className="font-medium text-white">25 / 25</span>
                         <span className="text-[#F7F3E8]/60">Keluarga Terdaftar</span>
                     </div>
                     <div className="h-3 w-px bg-white/20" />

@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
                         </div>
 
                         <p className="font-display text-xl sm:text-2xl text-[#F7F3E8]/90 font-light italic">
-                            "26 Rumah. Satu Kebersamaan."
+                            "25 Rumah. Satu Kebersamaan."
                         </p>
 
                         <p className="text-xs text-[#F7F3E8]/70 font-light leading-relaxed max-w-sm">
@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
 
                         <div className="pt-2 flex items-center gap-2 text-xs text-[#F7F3E8]/60">
                             <MapPin className="w-3.5 h-3.5 text-[#C8A96B] shrink-0" />
-                            <span>Jalan Oryza Utama No. 1–26, Kawasan Asri Mandiri</span>
+                            <span>Jalan Oryza Utama No. 1–25, Kawasan Asri Mandiri</span>
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
                                     onClick={() => scrollTo('neighbors')}
                                     className="hover:text-[#D8C28F] transition-colors"
                                 >
-                                    Data 26 Rumah Warga
+                                    Data 25 Rumah Warga
                                 </button>
                             </li>
                             <li>

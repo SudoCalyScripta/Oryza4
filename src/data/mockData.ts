@@ -19,7 +19,7 @@ export const ANNOUNCEMENTS_DATA: Announcement[] = [
     title: 'Gotong Royong Kebersihan & Peremajaan Jalur Hijau Oryza 4',
     date: '13 September 2026',
     isoDate: '2026-09-13',
-    summary: 'Persiapan kegiatan kebersihan area bersama 26 rumah menjelang pergantian musim. Pembersihan drainase, perapihan dahan tabebuya, dan silaturahmi sarapan bersama warga.',
+    summary: 'Persiapan kegiatan kebersihan area bersama 25 rumah menjelang pergantian musim. Pembersihan drainase, perapihan dahan tabebuya, dan silaturahmi sarapan bersama warga.',
     author: 'Panji Kusumah',
     authorRole: 'PIC Paguyuban (No. 17)',
     isUrgent: true,
@@ -82,7 +82,7 @@ export const EVENTS_DATA: CommunityEvent[] = [
     time: '16:00 - 20:00 WIB',
     title: 'Ramah Tamah Warga & Makan Sore Bersama',
     location: 'Courtyard Tengah & Area Taman Rumput',
-    description: 'Ajang ramah tamah hangat 26 keluarga Oryza 4 & pentas mini anak-anak warga.',
+    description: 'Ajang ramah tamah hangat 25 keluarga Oryza 4 & pentas mini anak-anak warga.',
     attendeesCount: 24,
     rsvpd: true
   },
@@ -112,16 +112,16 @@ export const EXPENSES_DATA: ExpenseItem[] = [
   },
   {
     id: 'exp-canopy',
-    title: 'Penambahan Canopy Tiap Rumah (26 Unit @ Rp 11.538.461)',
+    title: 'Penambahan Canopy Tiap Rumah (25 Unit @ Rp 12.000.000)',
     category: 'Renovasi & Fasilitas',
     amount: 300000000,
     date: '04 Sep 2026',
     pic: 'Wakil PIC (Fajar)',
-    notes: 'Pemasangan kanopi seragam bahan solarflat & baja ringan untuk seluruh 26 rumah.'
+      notes: 'Pemasangan kanopi seragam bahan solarflat & baja ringan untuk seluruh 25 rumah.'
   },
   {
     id: 'exp-mobil-keluarga',
-    title: 'Program Pembelian Mobil Setiap Keluarga (26 Unit Mobil Warga)',
+    title: 'Program Pembelian Mobil Setiap Keluarga (25 Unit Mobil Warga)',
     category: 'Pengadaan Kendaraan',
     amount: 13629100000,
     date: '02 Sep 2026',

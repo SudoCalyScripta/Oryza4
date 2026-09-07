@@ -169,14 +169,14 @@ export const ManagementPanel: React.FC<ManagementPanelProps> = ({
                         <div className="flex items-center justify-between mb-4">
                             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#D8C28F]">
                                 <Bell className="w-4 h-4 text-[#C8A96B]" />
-                                <span>Kirim Siaran Cepat ke 26 Keluarga</span>
+                                <span>Kirim Siaran Cepat ke 25 Keluarga</span>
                             </div>
                             <span className="text-[11px] text-[#F7F3E8]/60">WhatsApp & Portal Warga</span>
                         </div>
                         {broadcastSent ? (
                             <div className="p-4 rounded-xl bg-[#657A52]/40 border border-[#879477]/50 flex items-center gap-3 text-[#D8C28F] text-xs">
                                 <CheckCircle2 className="w-5 h-5 text-[#C8A96B] shrink-0" />
-                                <span>Pesan siaran berhasil dikirimkan ke kontak terdaftar seluruh 26 rumah.</span>
+                                <span>Pesan siaran berhasil dikirimkan ke kontak terdaftar seluruh 25 rumah.</span>
                             </div>
                         ) : (
                             <div className="space-y-3">

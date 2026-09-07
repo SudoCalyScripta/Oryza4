@@ -661,30 +661,4 @@ export const HOUSES_DATA: House[] = [
             price: 476000000
         }
     },
-    {
-        id: 26,
-        code: 'No. 26',
-        houseNumber: 'No. 26',
-        familyName: 'Keluarga Bu Lia',
-        headOfFamily: 'Bu Lia',
-        residentsCount: 3,
-        status: 'active',
-        statusLabel: 'Penghuni Tetap',
-        residents: [
-            { id: 'r26-1', name: 'Bu Lia', relation: 'Kepala Keluarga / Penghuni', phone: '0815-6677-2626' },
-            { id: 'r26-2', name: 'Anggota Keluarga', relation: 'Keluarga' }
-        ],
-        notes: 'Iuran sampah September 2026 lunas & stiker cluster lunas.',
-        favoriteCorner: 'Teras depan cul-de-sac ujung',
-        joinedYear: 2021,
-        image: HOUSE_IMAGES[0],
-        iuranStatus: 'Lunas',
-        iuranCoverage: 'Lunas September 2026',
-        stikerStatus: 'Lunas',
-        carDetails: {
-            model: 'MG 4 EV Magnify i-SMART',
-            plateNumber: 'B 1066 ORZ',
-            price: 423000000
-        }
-    }
 ];

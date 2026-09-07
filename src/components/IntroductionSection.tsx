@@ -50,7 +50,7 @@ export const IntroductionSection: React.FC = () => {
                         Lebih dari sekadar tempat tinggal.
                     </h2>
                     <p className="mt-4 text-xl sm:text-2xl md:text-3xl text-[#756653] font-light leading-snug">
-                        Tempat <span className="font-display italic text-[#657A52] font-normal">26 rumah</span> tumbuh sebagai satu lingkungan.
+                        Tempat <span className="font-display italic text-[#657A52] font-normal">25 rumah</span> tumbuh sebagai satu lingkungan.
                     </p>
                 </div>
 
@@ -76,7 +76,7 @@ export const IntroductionSection: React.FC = () => {
                                     Desain Residensial Tropis Kontemporer
                                 </span>
                                 <span className="hidden sm:inline-block text-[#D8C28F] font-mono text-[11px]">
-                                    Berdiri sejak 2020 • 26 Rumah
+                                    Berdiri sejak 2020 • 25 Rumah
                                 </span>
                             </div>
                         </div>

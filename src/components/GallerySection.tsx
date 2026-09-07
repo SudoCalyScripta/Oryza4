@@ -153,7 +153,7 @@ export const GallerySection: React.FC = () => {
                             Galeri Warga
                         </h2>
                         <p className="mt-3 text-sm sm:text-base text-[#F7F3E8]/75 font-light max-w-xl leading-relaxed">
-                            Kumpulan potret momen kebersamaan 26 keluarga, sudut asri lingkungan tropis, dan kehangatan hari-hari di Cluster Oryza 4.
+                            Kumpulan potret momen kebersamaan 25 keluarga, sudut asri lingkungan tropis, dan kehangatan hari-hari di Cluster Oryza 4.
                         </p>
                     </div>
 

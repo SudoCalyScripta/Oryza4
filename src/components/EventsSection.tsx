@@ -43,7 +43,7 @@ export const EventsSection: React.FC = () => {
                         Agenda Warga
                     </h2>
                     <p className="mt-3 text-sm sm:text-base text-[#756653] font-light">
-                        Ruang untuk berkegiatan, bermusyawarah, dan mempererat hubungan antar 26 keluarga.
+                        Ruang untuk berkegiatan, bermusyawarah, dan mempererat hubungan antar 25 keluarga.
                     </p>
                 </div>
 

@@ -40,7 +40,7 @@ export const CommunityFundSection: React.FC = () => {
                             Kas Warga & Pengadaan
                         </h2>
                         <p className="mt-2 text-sm sm:text-base text-[#F7F3E8]/75 font-light max-w-2xl">
-                            Pengelolaan kas yang transparan, termasuk realisasi pengadaan mobil ambulans siaga klaster (1 M), penambahan canopy tiap rumah (300 jt), dan alokasi unit mobil setiap keluarga 26 rumah.
+                            Pengelolaan kas yang transparan, termasuk realisasi pengadaan mobil ambulans siaga klaster (1 M), penambahan canopy tiap rumah (300 jt), dan alokasi unit mobil untuk 25 keluarga.
                         </p>
                     </div>
                     <div className="flex items-center gap-2 text-xs text-[#D8C28F] font-mono px-4 py-2 rounded-full border border-[#D8C28F]/30 bg-[#C8A96B]/15 self-start md:self-auto">
@@ -73,15 +73,15 @@ export const CommunityFundSection: React.FC = () => {
                                 <Home className="w-5 h-5" />
                             </div>
                             <span className="text-[10px] font-mono uppercase tracking-wider text-[#D8C28F] bg-[#C8A96B]/15 px-2.5 py-1 rounded-full border border-[#D8C28F]/20">
-                                Fasilitas 26 Rumah
+                                Fasilitas 25 Rumah
                             </span>
                         </div>
                         <h3 className="font-display text-lg text-white font-normal">Penambahan Canopy Rumah</h3>
                         <p className="text-xs text-[#F7F3E8]/65 mt-1 font-light leading-relaxed">
-                            Pemasangan canopy solarflat rangka baja ringan terstandar untuk kenyamanan 26 hunian.
+                            Pemasangan canopy solarflat rangka baja ringan terstandar untuk kenyamanan 25 hunian.
                         </p>
                         <div className="mt-4 pt-3 border-t border-white/10 flex items-baseline justify-between">
-                            <span className="text-[11px] text-[#F7F3E8]/60">Total Anggaran (26 Unit)</span>
+                            <span className="text-[11px] text-[#F7F3E8]/60">Total Anggaran (25 Unit)</span>
                             <span className="font-display text-xl text-[#D8C28F] font-normal">Rp 300.000.000</span>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export const CommunityFundSection: React.FC = () => {
                                 <Car className="w-5 h-5" />
                             </div>
                             <span className="text-[10px] font-mono uppercase tracking-wider text-[#D8C28F] bg-[#C8A96B]/15 px-2.5 py-1 rounded-full border border-[#D8C28F]/20">
-                                26 Unit Kendaraan
+                                25 Unit Kendaraan
                             </span>
                         </div>
                         <h3 className="font-display text-lg text-white font-normal">Mobil Setiap Keluarga</h3>
@@ -160,7 +160,7 @@ export const CommunityFundSection: React.FC = () => {
                                     className="w-full mt-3 py-3 rounded-2xl border border-[#D8C28F]/40 hover:border-[#D8C28F] bg-[#C8A96B]/20 hover:bg-[#D8C28F]/30 text-xs font-semibold text-white hover:text-[#D8C28F] transition-all flex items-center justify-center gap-2 shadow-xs"
                                 >
                                     <Eye className="w-4 h-4 text-[#C8A96B]" />
-                                    <span>{showFullRoster ? 'Tutup Rincian Status & Mobil 26 Rumah' : 'Buka Rincian Mobil, Canopy & Iuran 26 Rumah'}</span>
+                                    <span>{showFullRoster ? 'Tutup Rincian Status & Mobil 25 Rumah' : 'Buka Rincian Mobil, Canopy & Iuran 25 Rumah'}</span>
                                     {showFullRoster ? <ChevronUp className="w-4 h-4 ml-1" /> : <ChevronDown className="w-4 h-4 ml-1" />}
                                 </button>
                             </div>
@@ -224,10 +224,10 @@ export const CommunityFundSection: React.FC = () => {
                             <div>
                                 <h4 className="font-display text-2xl text-white font-normal flex items-center gap-2.5">
                                     <Car className="w-6 h-6 text-[#C8A96B]" />
-                                    <span>Rincian Pembelian Mobil, Canopy & Status 26 Rumah</span>
+                                    <span>Rincian Pembelian Mobil, Canopy & Status 25 Rumah</span>
                                 </h4>
                                 <p className="text-xs text-[#F7F3E8]/70 mt-1">
-                                    Transparansi lengkap alokasi kendaraan per keluarga, canopy terpasang (Rp 300 jt total), serta iuran sampah & stiker 26 rumah.
+                                    Transparansi lengkap alokasi kendaraan per keluarga, canopy terpasang (Rp 300 jt total), serta iuran sampah & stiker 25 rumah.
                                 </p>
                             </div>
                             <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl bg-white/10 border border-white/10 text-xs self-start lg:self-auto">
