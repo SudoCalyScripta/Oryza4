@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { EXPENSES_DATA, HOUSES_DATA } from '../data/mockData';
-import { ShieldCheck, Eye, Car, Home, HeartPulse, CheckCircle2, FileText, ChevronDown, ChevronUp } from 'lucide-react';
+import { ShieldCheck, Eye, Car, Home, HeartPulse, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { RiceGrainIcon } from './RiceMotif';
 
 export const CommunityFundSection: React.FC = () => {
     const [showFullRoster, setShowFullRoster] = useState(false);
     const [rosterTab, setRosterTab] = useState<'all' | 'mobil' | 'canopy' | 'sampah' | 'stiker'>('all');
-
-    // Saldo Kas Berjalan: 5 Miliar Rupiah
     const totalFund = 5000000000;
     const targetHouses = HOUSES_DATA.length;
     const paidSampahHouses = HOUSES_DATA.filter((h) => h.iuranStatus === 'Lunas').length;
@@ -23,14 +21,12 @@ export const CommunityFundSection: React.FC = () => {
             maximumFractionDigits: 0,
         }).format(val);
     };
-
     return (
         <section
             id="community-fund"
             className="relative py-28 md:py-36 px-6 md:px-12 bg-[#354936] text-[#F7F3E8] overflow-hidden"
         >
             <div className="max-w-7xl mx-auto relative z-10">
-                {/* Section Header */}
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
                     <div>
                         <div className="flex items-center gap-2.5 mb-3">
@@ -44,19 +40,15 @@ export const CommunityFundSection: React.FC = () => {
                             Kas Warga & Pengadaan
                         </h2>
                         <p className="mt-2 text-sm sm:text-base text-[#F7F3E8]/75 font-light max-w-2xl">
-                            Pengelolaan kas kas paguyuban yang transparan, termasuk realisasi pengadaan mobil ambulans siaga klaster (1 M), penambahan canopy tiap rumah (300 jt), dan alokasi unit mobil setiap keluarga 26 rumah.
+                            Pengelolaan kas yang transparan, termasuk realisasi pengadaan mobil ambulans siaga klaster (1 M), penambahan canopy tiap rumah (300 jt), dan alokasi unit mobil setiap keluarga 26 rumah.
                         </p>
                     </div>
-
                     <div className="flex items-center gap-2 text-xs text-[#D8C28F] font-mono px-4 py-2 rounded-full border border-[#D8C28F]/30 bg-[#C8A96B]/15 self-start md:self-auto">
                         <ShieldCheck className="w-4 h-4 text-[#C8A96B]" />
                         <span>Audit Finansial Terbuka 2026</span>
                     </div>
                 </div>
-
-                {/* 3 Strategic Initiative Feature Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-                    {/* Card 1: Ambulans */}
                     <div className="p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-[#D8C28F]/40 transition-all duration-300">
                         <div className="flex items-center justify-between mb-3">
                             <div className="w-10 h-10 rounded-2xl bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-300">
@@ -75,8 +67,6 @@ export const CommunityFundSection: React.FC = () => {
                             <span className="font-display text-xl text-[#D8C28F] font-normal">Rp 1.000.000.000</span>
                         </div>
                     </div>
-
-                    {/* Card 2: Canopy Rumah */}
                     <div className="p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-[#D8C28F]/40 transition-all duration-300">
                         <div className="flex items-center justify-between mb-3">
                             <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-300">
@@ -95,8 +85,6 @@ export const CommunityFundSection: React.FC = () => {
                             <span className="font-display text-xl text-[#D8C28F] font-normal">Rp 300.000.000</span>
                         </div>
                     </div>
-
-                    {/* Card 3: Mobil Keluarga */}
                     <div className="p-6 rounded-3xl bg-white/5 border border-white/10 hover:border-[#D8C28F]/40 transition-all duration-300">
                         <div className="flex items-center justify-between mb-3">
                             <div className="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-300">
@@ -116,10 +104,7 @@ export const CommunityFundSection: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Main Editorial Fund Highlight Panel */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 mb-12">
-                    {/* Big Number Card (5 Cols) */}
                     <div className="lg:col-span-5">
                         <div className="frost-glass-dark rounded-3xl p-8 sm:p-10 border border-[#D8C28F]/25 h-full flex flex-col justify-between">
                             <div>
@@ -133,10 +118,7 @@ export const CommunityFundSection: React.FC = () => {
                                     Saldo kas likuid paguyuban di rekening bersama Bank Mandiri atas nama Paguyuban Warga Cluster Oryza 4.
                                 </p>
                             </div>
-
-                            {/* Monthly Contribution Progress & Stiker Tracking */}
                             <div className="mt-8 pt-6 border-t border-white/10 space-y-4">
-                                {/* 1. Iuran Sampah Progress */}
                                 <div>
                                     <div className="flex items-center justify-between text-xs mb-1.5">
                                         <span className="text-white/80 font-medium">Iuran Sampah (September 2026)</span>
@@ -155,8 +137,6 @@ export const CommunityFundSection: React.FC = () => {
                                         <span className="text-amber-300/80">{targetHouses - paidSampahHouses} Belum (No. 7 & No. 14)</span>
                                     </div>
                                 </div>
-
-                                {/* 2. Bayar Stiker Rp 5.000 Progress */}
                                 <div className="pt-2">
                                     <div className="flex items-center justify-between text-xs mb-1.5">
                                         <span className="text-white/80 font-medium">Bayar Stiker Cluster (Rp 5.000)</span>
@@ -175,7 +155,6 @@ export const CommunityFundSection: React.FC = () => {
                                         <span>{targetHouses - paidStikerHouses} Rumah Belum</span>
                                     </div>
                                 </div>
-
                                 <button
                                     onClick={() => setShowFullRoster(!showFullRoster)}
                                     className="w-full mt-3 py-3 rounded-2xl border border-[#D8C28F]/40 hover:border-[#D8C28F] bg-[#C8A96B]/20 hover:bg-[#D8C28F]/30 text-xs font-semibold text-white hover:text-[#D8C28F] transition-all flex items-center justify-center gap-2 shadow-xs"
@@ -187,8 +166,6 @@ export const CommunityFundSection: React.FC = () => {
                             </div>
                         </div>
                     </div>
-
-                    {/* Recent Expenses List (7 Cols) */}
                     <div className="lg:col-span-7">
                         <div className="frost-glass-dark rounded-3xl p-8 sm:p-10 border border-[#D8C28F]/25 h-full">
                             <div className="flex items-center justify-between mb-6">
@@ -204,7 +181,6 @@ export const CommunityFundSection: React.FC = () => {
                                     {EXPENSES_DATA.length} Transaksi
                                 </span>
                             </div>
-
                             <div className="space-y-3 max-h-[440px] overflow-y-auto pr-1">
                                 {EXPENSES_DATA.map((item) => (
                                     <div
@@ -227,7 +203,6 @@ export const CommunityFundSection: React.FC = () => {
                                             )}
                                             <p className="text-[11px] text-[#F7F3E8]/60">PIC: {item.pic}</p>
                                         </div>
-
                                         <div className="text-left sm:text-right shrink-0 pt-2 sm:pt-0 border-t sm:border-t-0 border-white/10">
                                             <span className="font-display text-lg sm:text-xl text-[#D8C28F] font-normal block">
                                                 - {formatRupiah(item.amount)}
@@ -243,8 +218,6 @@ export const CommunityFundSection: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Expandable Transparent Status & Car Grid of all 26 Houses */}
                 {showFullRoster && (
                     <div className="frost-glass-dark rounded-3xl p-6 sm:p-8 border border-[#D8C28F]/30 animate-in fade-in slide-in-from-top-4 duration-300">
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-6 gap-4">
@@ -257,8 +230,6 @@ export const CommunityFundSection: React.FC = () => {
                                     Transparansi lengkap alokasi kendaraan per keluarga, canopy terpasang (Rp 300 jt total), serta iuran sampah & stiker 26 rumah.
                                 </p>
                             </div>
-
-                            {/* Roster filter tabs */}
                             <div className="flex flex-wrap items-center gap-1.5 p-1.5 rounded-2xl bg-white/10 border border-white/10 text-xs self-start lg:self-auto">
                                 <button
                                     onClick={() => setRosterTab('all')}
@@ -309,13 +280,10 @@ export const CommunityFundSection: React.FC = () => {
                                 </button>
                             </div>
                         </div>
-
-                        {/* Grid of all 26 houses */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                             {HOUSES_DATA.map((h) => {
                                 const isSampahPaid = h.iuranStatus === 'Lunas';
                                 const isStikerPaid = h.stikerStatus === 'Lunas';
-
                                 return (
                                     <div
                                         key={h.id}
@@ -332,8 +300,6 @@ export const CommunityFundSection: React.FC = () => {
                                                 {h.headOfFamily}
                                             </span>
                                         </div>
-
-                                        {/* Car details per house */}
                                         {h.carDetails && (rosterTab === 'all' || rosterTab === 'mobil') && (
                                             <div className="p-2.5 rounded-xl bg-black/20 border border-white/10 space-y-1">
                                                 <div className="flex items-center justify-between text-[11px]">
@@ -352,8 +318,6 @@ export const CommunityFundSection: React.FC = () => {
                                                 </div>
                                             </div>
                                         )}
-
-                                        {/* Canopy Status */}
                                         {(rosterTab === 'all' || rosterTab === 'canopy') && (
                                             <div className="flex items-center justify-between text-[11px] p-2 rounded-xl bg-white/5 border border-white/10">
                                                 <span className="text-white/60 flex items-center gap-1">
@@ -365,11 +329,8 @@ export const CommunityFundSection: React.FC = () => {
                                                 </span>
                                             </div>
                                         )}
-
-                                        {/* Iuran & Stiker rows */}
                                         {(rosterTab === 'all' || rosterTab === 'sampah' || rosterTab === 'stiker') && (
                                             <div className="space-y-1.5 pt-2 border-t border-white/10">
-                                                {/* Iuran Sampah status */}
                                                 {(rosterTab === 'all' || rosterTab === 'sampah') && (
                                                     <div className="flex items-center justify-between text-[11px]">
                                                         <span className="text-white/60">Sampah:</span>
@@ -387,8 +348,6 @@ export const CommunityFundSection: React.FC = () => {
                                                         </span>
                                                     </div>
                                                 )}
-
-                                                {/* Stiker status */}
                                                 {(rosterTab === 'all' || rosterTab === 'stiker') && (
                                                     <div className="flex items-center justify-between text-[11px]">
                                                         <span className="text-white/60">Stiker 5rb:</span>

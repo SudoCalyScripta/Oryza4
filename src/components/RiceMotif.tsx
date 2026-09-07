@@ -8,7 +8,6 @@ export const RiceGrainIcon: React.FC<{ className?: string }> = ({ className = 'w
         className={className}
         aria-hidden="true"
     >
-        {/* Delicate slender rice grain shape */}
         <path
             d="M12 2C8.5 6 6 11 6 15.5C6 19 8.5 21.5 12 21.5C15.5 21.5 18 19 18 15.5C18 11 15.5 6 12 2Z"
             stroke="currentColor"
@@ -35,14 +34,12 @@ export const RiceBranchMotif: React.FC<{ className?: string }> = ({ className = 
         className={className}
         aria-hidden="true"
     >
-        {/* Slender curved stem */}
         <path
             d="M16 28C16 21 17.5 13 22 5"
             stroke="currentColor"
             strokeWidth="1.2"
             strokeLinecap="round"
         />
-        {/* Delicate grain nodes */}
         <ellipse cx="20.5" cy="7.5" rx="2" ry="3.5" transform="rotate(35 20.5 7.5)" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.15" />
         <ellipse cx="16.5" cy="12" rx="1.8" ry="3.2" transform="rotate(-30 16.5 12)" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.15" />
         <ellipse cx="19" cy="16.5" rx="1.8" ry="3.2" transform="rotate(30 19 16.5)" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.15" />

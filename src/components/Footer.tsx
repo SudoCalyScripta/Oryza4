@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, MapPin, Phone, Heart } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { RiceGrainIcon } from './RiceMotif';
 
 export const Footer: React.FC = () => {
@@ -102,8 +102,6 @@ export const Footer: React.FC = () => {
                             </li>
                         </ul>
                     </div>
-
-                    {/* Emergency & Contacts (4 Cols) */}
                     <div className="md:col-span-4 space-y-3">
                         <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D8C28F] mb-4">
                             Kontak Darurat 24 Jam
@@ -151,14 +149,12 @@ export const Footer: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Bottom copyright line */}
                 <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#F7F3E8]/60 font-light">
                     <p className="tracking-wide">
                         Portal Warga Oryza 4
                     </p>
                     <div className="flex items-center gap-1">
-                        <span>Dikelola bersama oleh Paguyuban Warga Oryza 4</span>
+                        <span>Dikelola bersama oleh Warga Oryza 4</span>
                     </div>
                 </div>
             </div>

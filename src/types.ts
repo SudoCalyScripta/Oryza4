@@ -9,9 +9,9 @@ export interface Resident {
 }
 
 export interface House {
-    id: number | string; // e.g. 1, '2A', '11A', '21-23'
-    code: string; // e.g., "Oryza 4 No. 1"
-    houseNumber: string; // e.g. "No. 1", "No. 2A", "No. 21 & 23"
+    id: number | string;
+    code: string;
+    houseNumber: string;
     familyName: string;
     headOfFamily: string;
     residentsCount: number;

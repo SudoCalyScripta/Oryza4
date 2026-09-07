@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { ARCHITECTURE_IMAGES } from '../data/mockData';
-import { ArrowDown, Compass, Users } from 'lucide-react';
+import { Users } from 'lucide-react';
 import { RiceGrainIcon } from './RiceMotif';
 
 interface HeroSectionProps {
     onEnterCommunity: () => void;
-    onExploreOryza: () => void;
 }
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
     onEnterCommunity,
-    onExploreOryza,
 }) => {
     const [scrollY, setScrollY] = useState(0);
     const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
@@ -117,7 +115,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
 
                 {/* Action Buttons with Frost UI */}
-                <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto justify-center">
+                <div className="mt-8 sm:mt-10 flex items-center justify-center w-full sm:w-auto">
                     <button
                         id="hero-enter-community-btn"
                         onClick={onEnterCommunity}
@@ -127,14 +125,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         <span>Masuk ke Portal Warga</span>
                     </button>
 
-                    <button
-                        id="hero-explore-oryza-btn"
-                        onClick={onExploreOryza}
-                        className="w-full sm:w-auto px-8 py-3.5 rounded-full text-sm font-medium tracking-wider text-[#F7F3E8] border border-[#D8C28F]/35 bg-white/10 hover:bg-[#D8C28F]/20 hover:text-[#D8C28F] hover:border-[#D8C28F] backdrop-blur-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(216,194,143,0.25)] active:scale-95 flex items-center justify-center gap-2.5 shadow-sm"
-                    >
-                        <Compass className="w-4 h-4 text-[#C8A96B]" />
-                        <span>Lihat Profil Lingkungan</span>
-                    </button>
                 </div>
 
                 {/* Floating Cluster Micro Stats Bar */}
