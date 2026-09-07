@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { UserRole } from '../types';
 import { Shield, Menu, X, ChevronDown, Sparkles, MessageSquarePlus } from 'lucide-react';
-import { RiceGrainIcon } from './RiceMotif';
 
 interface NavbarProps {
     currentRole: UserRole;
@@ -37,7 +36,9 @@ export const Navbar: React.FC<NavbarProps> = ({
         { label: 'Kas Warga', href: '#community-fund' },
         { label: 'Lapor Lingkungan', href: '#lapor-lingkungan' },
     ];
+
     const roles: UserRole[] = ['Warga', 'PIC', 'Wakil PIC', 'Bendahara'];
+
     const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         setIsMobileMenuOpen(false);
@@ -46,37 +47,44 @@ export const Navbar: React.FC<NavbarProps> = ({
             element.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
     return (
         <>
             <header
                 id="main-navigation"
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+                    isScrolled
                         ? 'py-3.5 bg-[#354936]/90 backdrop-blur-2xl border-b border-[#D8C28F]/20 shadow-[0_15px_35px_-10px_rgba(37,40,33,0.35)] text-white'
-                        : 'py-6 bg-transparent text-white'
-                    }`}
+                        : 'py-5 bg-transparent text-white'
+                }`}
             >
                 <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
+                    
+                    {/* LOGO DIPERBESAR SECARA PROPOSIONAL (w-14 h-14 md:w-16 md:h-16 shrink-0) */}
                     <a
                         href="#hero"
                         onClick={(e) => scrollToSection(e, '#hero')}
-                        className="group flex items-center gap-3 tracking-widest text-left"
+                        className="group flex items-center gap-3.5 tracking-widest text-left"
                         id="nav-brand-logo"
                     >
-                        <div className="w-9 h-9 rounded-xl border border-[#D8C28F]/35 bg-[#354936]/40 backdrop-blur-md flex items-center justify-center transition-transform group-hover:scale-105 duration-300 shadow-sm relative">
-                            <span className="font-display text-lg tracking-normal font-bold text-[#F7F3E8]">O4</span>
-                            <span className="absolute -top-1 -right-1 text-[#C8A96B]">
-                                <RiceGrainIcon className="w-2.5 h-2.5 rotate-12" />
-                            </span>
+                        <div className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center shrink-0 transition-transform group-hover:scale-105 duration-300">
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/logo.png`}
+                                alt="Logo Oryza Family"
+                                className="w-full h-full object-contain drop-shadow-lg"
+                            />
                         </div>
-                        <div className="flex flex-col">
-                            <span className="font-display text-xl tracking-[0.2em] font-semibold text-[#F7F3E8] uppercase leading-none">
+                        <div className="flex flex-col justify-center">
+                            <span className="font-display text-xl md:text-2xl tracking-[0.2em] font-semibold text-[#F7F3E8] uppercase leading-tight">
                                 ORYZA 4
                             </span>
-                            <span className="text-[10px] tracking-[0.25em] text-[#D8C28F] uppercase mt-1 font-light">
+                            <span className="text-[10px] md:text-[11px] tracking-[0.25em] text-[#D8C28F] uppercase font-light">
                                 Paguyuban Warga
                             </span>
                         </div>
                     </a>
+
+                    {/* MENU NAVIGASI DESKTOP */}
                     <nav className="hidden lg:flex items-center gap-1 xl:gap-2 px-4 py-1.5 rounded-full border border-white/15 bg-white/10 backdrop-blur-xl">
                         {navLinks.map((link) => (
                             <a
@@ -89,6 +97,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                             </a>
                         ))}
                     </nav>
+
+                    {/* TOMBOL PERAN & LAPOR */}
                     <div className="hidden sm:flex items-center gap-3">
                         <button
                             id="nav-quick-report-btn"
@@ -98,6 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             <MessageSquarePlus className="w-3.5 h-3.5 text-[#354936]" />
                             <span>Lapor</span>
                         </button>
+
                         <div className="relative">
                             <button
                                 id="nav-role-switcher-btn"
@@ -108,6 +119,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                                 <span className="font-medium tracking-wide">{currentRole}</span>
                                 <ChevronDown className="w-3 h-3 opacity-60 text-[#D8C28F]" />
                             </button>
+
                             {isRoleDropdownOpen && (
                                 <div
                                     id="nav-role-dropdown"
@@ -128,10 +140,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                                                         onOpenManagementModal();
                                                     }
                                                 }}
-                                                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left transition-colors ${currentRole === role
+                                                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-left transition-colors ${
+                                                    currentRole === role
                                                         ? 'bg-[#354936] text-[#F7F3E8] font-semibold border border-[#D8C28F]/30'
                                                         : 'text-white/75 hover:bg-[#D8C28F]/15 hover:text-[#D8C28F]'
-                                                    }`}
+                                                }`}
                                             >
                                                 <span>{role}</span>
                                                 {role !== 'Warga' && (
@@ -160,6 +173,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                             )}
                         </div>
                     </div>
+
+                    {/* HAMBURGER MENU MOBILE */}
                     <div className="flex lg:hidden items-center gap-2">
                         <button
                             id="mobile-menu-toggle-btn"
@@ -172,6 +187,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                     </div>
                 </div>
             </header>
+
+            {/* MOBILE DRAWER */}
             {isMobileMenuOpen && (
                 <div
                     id="mobile-nav-drawer"
@@ -204,10 +221,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                                             setIsMobileMenuOpen(false);
                                             if (r !== 'Warga') onOpenManagementModal();
                                         }}
-                                        className={`px-2.5 py-1 text-xs rounded-full border transition-all ${currentRole === r
+                                        className={`px-2.5 py-1 text-xs rounded-full border transition-all ${
+                                            currentRole === r
                                                 ? 'bg-[#C8A96B] text-[#252821] border-[#C8A96B] font-medium'
                                                 : 'border-white/20 text-white/80 hover:border-[#D8C28F]/60 hover:text-[#D8C28F]'
-                                            }`}
+                                        }`}
                                     >
                                         {r}
                                     </button>

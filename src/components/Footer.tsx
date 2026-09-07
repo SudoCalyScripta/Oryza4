@@ -7,19 +7,20 @@ export const Footer: React.FC = () => {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
     };
-
     return (
         <footer className="relative bg-[#1D2B1E] text-[#F7F3E8] pt-20 pb-12 px-6 md:px-12 border-t border-[#354936]/40 overflow-hidden">
-            {/* Subtle background glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#354936]/40 rounded-full blur-[120px] pointer-events-none" />
-
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
-                    {/* Brand Column (5 Cols) */}
                     <div className="md:col-span-5 space-y-4">
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-xl border border-[#D8C28F]/30 bg-white/10 backdrop-blur-md flex items-center justify-center">
-                                <span className="font-display text-xl font-bold text-[#F7F3E8]">O4</span>
+                            <div className="w-14 h-14 flex items-center justify-center">
+                                {/* Disesuaikan menggunakan import.meta.env.BASE_URL */}
+                                <img
+                                    src={`${import.meta.env.BASE_URL}assets/logo.png`}
+                                    alt="Logo Oryza Family"
+                                    className="w-full h-full object-contain"
+                                />
                             </div>
                             <div>
                                 <span className="font-display text-2xl tracking-[0.2em] font-semibold text-[#F7F3E8] uppercase block leading-none">
@@ -31,22 +32,17 @@ export const Footer: React.FC = () => {
                                 </span>
                             </div>
                         </div>
-
                         <p className="font-display text-xl sm:text-2xl text-[#F7F3E8]/90 font-light italic">
                             "25 Rumah. Satu Kebersamaan."
                         </p>
-
                         <p className="text-xs text-[#F7F3E8]/70 font-light leading-relaxed max-w-sm">
-                            Kompleks residensial privat bersahaja yang mengedepankan ketenangan arsitektur, kelestarian ruang hijau, dan kehangatan bertetangga yang berkesinambungan.
+                            "Silih Asah, Silih Asih, Silih Asaan".
                         </p>
-
                         <div className="pt-2 flex items-center gap-2 text-xs text-[#F7F3E8]/60">
                             <MapPin className="w-3.5 h-3.5 text-[#C8A96B] shrink-0" />
-                            <span>Jalan Oryza Utama No. 1–25, Kawasan Asri Mandiri</span>
+                            <span>Gland Ciwastra Park2 Oryza 04</span>
                         </div>
                     </div>
-
-                    {/* Navigation Links (3 Cols) */}
                     <div className="md:col-span-3 space-y-3">
                         <h4 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D8C28F] mb-4">
                             Navigasi Warga
@@ -116,7 +112,6 @@ export const Footer: React.FC = () => {
                                     0812-4400-0404
                                 </span>
                             </div>
-
                             <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#D8C28F]/40 hover:bg-white/10 transition-all duration-300 flex items-center justify-between">
                                 <div>
                                     <span className="font-medium text-white block">PIC Paguyuban (Panji Kusumah)</span>
@@ -126,7 +121,6 @@ export const Footer: React.FC = () => {
                                     0819-3311-1717
                                 </span>
                             </div>
-
                             <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#D8C28F]/40 hover:bg-white/10 transition-all duration-300 flex items-center justify-between">
                                 <div>
                                     <span className="font-medium text-white block">Wakil PIC (Fajar)</span>
@@ -136,7 +130,6 @@ export const Footer: React.FC = () => {
                                     0812-5566-1919
                                 </span>
                             </div>
-
                             <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-[#D8C28F]/40 hover:bg-white/10 transition-all duration-300 flex items-center justify-between">
                                 <div>
                                     <span className="font-medium text-white block">Bendahara (Tiyahandayanis)</span>
